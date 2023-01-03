@@ -1,0 +1,108 @@
+<!DOCTYPE html> <!-- padrão HTML 5 -->
+<html lang=" pt-br">
+    <head>
+         <title>HTML - Layouts</title>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+               * {
+                 box-sizing: border-box;
+               }
+
+               body {
+                  font-family: Arial, Helvetica, sans-serif;
+               }
+
+               /*  Style the header */
+              header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+              }
+
+              /* Create two columns/boxes that floats next to each other */
+              nav {
+                float: left;
+                width: 30%;
+                height: 300px; /* only for demonstration, should be removed */
+                background: #ccc;
+                padding: 20px;
+              }
+
+              /* Style the list inside the menu */
+             nav ul {
+                list-style-type: none;
+                padding: 0;
+             }
+
+             article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 300px; /* only for demonstration, should be removed */
+             }
+
+             /* Clear floats after the columns */
+             section::after {
+                content: "";
+                display: table;
+                clear: both;
+             }
+
+             /* Style the footer */
+             footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+             }
+
+             /* Responsive layout - makes the columns/boxes stack on top of each other instead of next to each other, on small screens */
+             @media (max-width: 600px) {
+             nav, article {
+              width: 100%;
+              height: auto;
+             }
+         }
+         </style>
+    </head>
+    <body>
+
+        <header>
+            <h2>Curso Front-end-HTML</h2>
+
+        </header>
+       
+       <section>
+           <nav>
+               <ul>
+                   <li><a href="#home">Home</li>
+                   <li><a href="#sobre">Sobre</li>
+                   <li><a href="./06-formularios.html">Contato</a></li>
+               </ul>
+           </nav>
+           <article>
+               
+               <h1>Título Artigo </h1>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id dignissim nibh. Donec commodo, ligula at consectetur vestibulum, enim magna imperdiet eros, nec molestie sapien massa posuere sapien. Proin ut fermentum metus. Mauris finibus a ligula eget molestie. Duis nec odio in ex tempor posuere sit amet sit amet lorem. Ut pretium neque et lorem auctor ultrices. Ut vel faucibus nibh. Integer eu luctus velit. Vivamus fringilla odio enim. Fusce imperdiet accumsan neque, at pretium nisi egestas id. Sed iaculis ex sed purus efficitur tincidunt. Maecenas consequat sed leo et sollicitudin.</p>
+
+               <p>Curabitur est nibh, ornare vel nunc et, mattis tincidunt lorem. Phasellus lacus nulla, finibus sed risus id, laoreet auctor turpis. Vestibulum justo risus, dapibus hendrerit mattis at, hendrerit quis purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at dolor sodales, malesuada nulla sit amet, pulvinar sapien. Praesent sed risus dolor. Curabitur mattis eros tellus, id imperdiet sapien lobortis id. Aenean rhoncus diam quis nibh sodales euismod. Fusce gravida pulvinar facilisis. Proin rutrum sem quis leo blandit tempus. Donec facilisis turpis eu ante tempus venenatis. Nunc sagittis sed magna nec sagittis. In eu vehicula turpis.</p>
+
+
+
+
+
+
+           </article>
+       </section>
+
+       <footer>
+           <p>Desenvolvido por Bruno Ciribelli</p>
+       </footer>
+  
+    </body>
+</html>

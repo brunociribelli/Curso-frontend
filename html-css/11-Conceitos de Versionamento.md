@@ -1,4 +1,3 @@
-# Curso-frontend
 
 # GIT
 ## Conceitos de Versionamento
@@ -22,13 +21,10 @@ Mac (brew): brew install git
 ## Criar  conta no Github
 
 ## Clonar o projeto 
-git clone https://github.com/brunociribelli/Curso-frontend.git
 
 ## Commits
 Informação  de alteração 
 - após testado todo seu código
-- git add *
-- git commit -m "mensagem"
 
 ## GitFlow
 Fluxo do Git
