@@ -1,4 +1,6 @@
-# GIT
+# Curso Front-end 
+#### EBAC
+
 ## Conceitos Versionamento 
 - Histórico
 - Controle alterou
