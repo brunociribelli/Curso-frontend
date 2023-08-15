@@ -42,7 +42,7 @@ são ramificações / Versoes paralelas
 
 - main / master (vai para produção, quando o projeto é publicado)
 - develop 
-- DOD Definition of Done: critéios de aceite
+- DOD Definition of Done: critérios de aceite
 - Versionamento 1.0.0
 
 git checkout -b dev (cria uma branch)
